@@ -54,7 +54,6 @@ h1 {
 }
 
 
-
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -62,6 +61,7 @@ input[type="password"] {
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  align-content: center;
 }
 
 button {

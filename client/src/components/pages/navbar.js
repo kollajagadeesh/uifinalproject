@@ -1,3 +1,4 @@
+import {Outlet,Link} from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
@@ -9,19 +10,23 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
             <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="messenger"></a>
+                <Link className="nav-link active" aria-current="page" to="/About">About</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Register</a>
+                <Link className="nav-link active" aria-current="page" to="/register">Register</Link>
               </li>
               <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">Login</a>              </li>
+              <Link className="nav-link active" aria-current="page" to="/login">Login</Link>           
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/Profile">Profile</Link>
+              </li>
               
             </ul>
           </div>
         </div>
       </nav>
-
+      <Outlet/>
     </div>
   );
 }
